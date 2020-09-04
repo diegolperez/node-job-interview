@@ -126,7 +126,7 @@ Con contenedor, debido a que nodeJS no puede funcionar de la misma forma en los 
 
 - [x] ¿Te gustaría desplegar esta aplicación en algun servicio en la nube (GCP, AWS, Heroku, etc.)?
 
-Si, siempre lo más lindo es cuando se sube a la nube algo que hemos logrado y que pueda ser accesible para todos. En mi caso lo he subido en Heroku.
+Si, siempre lo más lindo es cuando se sube a la nube algo que hemos logrado y que pueda ser accesible para todos. En mi caso lo he subido en Heroku en https://node-job-interview.herokuapp.com/ pero no alcance a ponerlo en funcionamiento.
 
 En cualquiera de las preguntas anteriores,
 
