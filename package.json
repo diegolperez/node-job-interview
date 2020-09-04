@@ -4,6 +4,7 @@
   "description": "search coding problem",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",    
     "dev": "NODE_ENV=develop node index.js",
     "test": "lab -v **/*.test.js"
   },
