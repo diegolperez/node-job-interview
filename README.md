@@ -1,4 +1,4 @@
-# Code Challenge of Diego Pérez
+# Code Challenge by Diego Pérez
 
 Este proyecto intenta identificar tus habilidades no solo en el aspecto de escribir código, sino también, en la toma de decisiones para resolver los problemas, cuales son tos buenas prácticas, entre otros.
 
