@@ -88,39 +88,44 @@ Antes de dar una definición y los requerimientos, es importante que conozcas de
   
 ---
 
-- [ ] ¿Consideras que el proyecto debe ser reestructurado? 
+- [x] ¿Consideras que el proyecto debe ser reestructurado? 
 
----
+Si, el proyecto debería ser reestructurado, sobretodo para facilidad de ubicación y lectura del código. Por ejemplo utilizando el archivo filter.js para los filtros y además he creado otro archivo que lo he nombrado utils.js que tiene funciones que podrían utilizarse en todo el proyecto. Esto permitirá que el archivo index.js no tenga toda la lógica en un solo archivo. En cuanto a la estructura de carpetas me parece correcto.
 
-- [ ] ¿Consideras que el proyecto debe tener una arquitectura bien definida?
+- [x] ¿Consideras que el proyecto debe tener una arquitectura bien definida?
 
----
+Si, sobretodo porque estamos manejando filtros a nivel de archivos y no BDD, por lo que obligatoriamente la arquitectura debe mantenerse de la carpeta data,  y la estructura de los archivos de datos YAML, que son la parte fundamental en este proyecto. 
 
-- [ ] ¿Consideras que el proyecto necesita más pruebas unitarias? 
---- 
+- [x] ¿Consideras que el proyecto necesita más pruebas unitarias? 
+Si, se deberían implementarse pruebas unitarias para cada parte de código si es posible, debido al tiempo solamente he realizado pruebas unitarias manualmente, en este caso funciones que he creado, como por ejemplo ByEmailAndService, DeleteStringSpaces, compareRegExp, validateRegExp. Sin embargo es indispensable que se las automatice y se hagan más por parte de una unidad de QA.    
 
-- [ ] ¿Consideras que deberías escribir pruebas para implementar el requerimiento obligatorio?
+- [x] ¿Consideras que deberías escribir pruebas para implementar el requerimiento obligatorio?
 
----
-- [ ] ¿Consideras que deberías seguir alguna estrategia de versionamiento? 
+Si, como mencioné en el anterior punto es indispensable automatizarlas, sobretodo de la función principal filter.ByEmailAndService que es la que cumple el requerimiento principal.
 
----
-- [ ] ¿Consideras que deberías seguir alguna estrategia de branching? 
+- [x] ¿Consideras que deberías seguir alguna estrategia de versionamiento? 
 
----
-- [ ] ¿Consideras que deberías tener una imagen Docker para el proyecto actual? 
+Si, es indispensable seguir un versionamiento. En mi caso he utilizado git para hacerlo, además de subir el repositorio a github.
 
----
-- [ ] ¿Consideras que deberías publicar tu contenedor en algún contenedor de registros? (DockerHub, Github Packages, etc.).
+- [x] ¿Consideras que deberías seguir alguna estrategia de branching? 
 
----
-- [ ] ¿Consideras que deberías desplegar la aplicación con o sin contenedor?
+Si, sobretodo para tener un control del código que ha pasado las pruebas unitarias, del que no, en mi caso he preparado dos ramas, una master y una develop nada más ya que solamente estaba en el proyecto mi persona. Sin embargo es indispensable hacerlo desde un inicio, puesto que el poryecto podría escalar y tener más desarrolladores.
 
----
+- [X] ¿Consideras que deberías tener una imagen Docker para el proyecto actual? 
 
-- [ ] ¿Te gustaría desplegar esta aplicación en algun servicio en la nube (GCP, AWS, Heroku, etc.)?
+Si, por dos razones, la primera para poder tenerlo empaquetado y que funcione en cualquier servidor independientemente del sistema operativo, y más aún con NodeJS que tiene particularidades y cambios entre el SO que se ejecuta. Y la segunda en el caso de que esta aplicación pueda ser desplegada en un futuro. En mi caso no podré subirla porque ya tengo mi cuenta gratis llena.  
 
----
+- [X] ¿Consideras que deberías publicar tu contenedor en algún contenedor de registros? (DockerHub, Github Packages, etc.).
+
+En este caso, al ser un proyecto de pruebas no es necesario subirlo a la nube. Pero en caso de que se podría desplegar sería una buena opción.
+
+- [X] ¿Consideras que deberías desplegar la aplicación con o sin contenedor?
+
+Con contenedor, debido a que nodeJS no puede funcionar de la misma forma en los distintos sistemas operativos.
+
+- [X] ¿Te gustaría desplegar esta aplicación en algun servicio en la nube (GCP, AWS, Heroku, etc.)?
+
+Si, siempre lo más lindo es cuando se sube a la nube algo que hemos logrado y que pueda ser accesible para todos. En mi caso lo he subido en Heroku.
 
 En cualquiera de las preguntas anteriores,
 
